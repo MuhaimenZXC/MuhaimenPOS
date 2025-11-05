@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern POS System</title>
+    <meta http-equiv="refresh" content="0; url=auth/login.php">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .loading {
+            text-align: center;
+            color: white;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    
+    <div class="loading">
+        <div class="spinner"></div>
+        <h2>Loading Modern POS System...</h2>
+        <p>Redirecting to login page...</p>
+        <p><a href="auth/login.php" style="color: white; text-decoration: underline;">Click here if not redirected automatically</a></p>
+    </div>
+
+    <script>
+        // Fallback redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = 'auth/login.php';
+        }, 2000);
+    </script>
+</body>
+</html>
